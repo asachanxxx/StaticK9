@@ -1,0 +1,40 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "LogIn";
+}
+
+<!-- Page info -->
+<div class="page-top-info">
+    <div class="container">
+        <h4>Sign IN</h4>
+        <div class="site-pagination">
+            <a href="">Home</a> /
+            <a href="">SignIn</a>
+        </div>
+    </div>
+</div>
+<!-- Page info end -->
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="row justify-content-md-center">
+                <div class="col-lg-5 contact-info">
+                    <form class="contact-form">
+                        <label for="inputEmail3" class="col-sm-2 col-form-label">Email/UserName</label>
+                        <input type="text" placeholder="">
+                        <label for="inputEmail3" class="col-sm-2 col-form-label">Passwords</label>
+                        <input type="password" placeholder="">
+                        <button class="site-btn" type="submit">Log In</button>
+                        <button asp-controller="Account" asp-action="Register" class="site-btn" type="submit">Register</button>
+                    </form>
+                    <div class="contact-social">
+                        <a href="#"><i class="fa fa-pinterest"></i></a>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-dribbble"></i></a>
+                        <a href="#"><i class="fa fa-behance"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+  </section>
