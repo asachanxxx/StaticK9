@@ -9,6 +9,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StaticK9.F.MainUI", "Static
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaticK9.F.Models", "StaticK9.F.Models\StaticK9.F.Models.csproj", "{67CBF576-906A-4C9A-9F7B-16B8F02E16E6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaticK9.F.Repositories", "StaticK9.F.Repositories\StaticK9.F.Repositories.csproj", "{8437359F-ECC9-46B1-9D18-8F709EEF04C3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NewFolder1", "NewFolder1", "{A162851C-585F-4D4D-B11C-73980BF09643}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaticK9.F.Security", "StaticK9.F.Security\StaticK9.F.Security.csproj", "{E3943D39-A80A-4D2F-A188-A09542A9E5E5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +33,14 @@ Global
 		{67CBF576-906A-4C9A-9F7B-16B8F02E16E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{67CBF576-906A-4C9A-9F7B-16B8F02E16E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{67CBF576-906A-4C9A-9F7B-16B8F02E16E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8437359F-ECC9-46B1-9D18-8F709EEF04C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8437359F-ECC9-46B1-9D18-8F709EEF04C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8437359F-ECC9-46B1-9D18-8F709EEF04C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8437359F-ECC9-46B1-9D18-8F709EEF04C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3943D39-A80A-4D2F-A188-A09542A9E5E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3943D39-A80A-4D2F-A188-A09542A9E5E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3943D39-A80A-4D2F-A188-A09542A9E5E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3943D39-A80A-4D2F-A188-A09542A9E5E5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

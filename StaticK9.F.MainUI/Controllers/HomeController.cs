@@ -19,7 +19,7 @@ namespace StaticK9.F.MainUI.Controllers
             _logger = logger;
         }
 
-       
+        [AllowAnonymous]
         public IActionResult Index()
         {
             return View();

@@ -2417,4 +2417,15 @@ ol {
 	.social-links a span {
 		display: none;
 	}
+
+	.text-box-style-default {
+		width: 100%;
+		height: 44px;
+		border: none;
+		padding: 0 18px;
+		background: #f0f0f0;
+		border-radius: 40px;
+		margin-bottom: 17px;
+		font-size: 14px;
+	}
 }

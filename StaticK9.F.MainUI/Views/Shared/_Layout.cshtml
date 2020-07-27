@@ -61,7 +61,8 @@
                         <div class="user-panel">
                             <div class="up-item">
                                 <i class="flaticon-profile"></i>
-                                <a asp-area="" asp-controller="Account" asp-action="Login">Sign</a> In or <a asp-controller="Account" asp-action="Register">Create Account</a>
+                                @*<a asp-area="" asp-controller="Account" asp-action="Login">Sign</a> In or <a asp-controller="Account" asp-action="Register">Create Account</a>*@
+                                <a asp-area="Identity" asp-page="/account/login">Sign</a> In or <a  asp-area="Identity" asp-page="/Account/Register">Create Account</a>
                                 
                             </div>
                             <div class="up-item">

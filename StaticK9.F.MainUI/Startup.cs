@@ -12,6 +12,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using StaticK9.F.Infrastructure;
+using StaticK9.F.Repositories;
 
 namespace StaticK9.F.MainUI
 {
@@ -35,10 +36,11 @@ namespace StaticK9.F.MainUI
             /*
              * THis will Add authorize to all the Razer Pages
              */
-            //services.AddRazorPages().AddMvcOptions(oo => oo.Filters.Add(new AuthorizeFilter()));
+            services.AddRazorPages().AddMvcOptions(oo => oo.Filters.Add(new AuthorizeFilter()));
 
             services.AddControllersWithViews();
             services.AddSingleton<ISystemConfigurations, SystemConfigurations>();
+            services.AddSingleton<IUserRepository, UserRepository>();
 
             /*
              * When we add Cookie Auth then if some controller or Razer page has been authorized then it will redeirect to 
@@ -66,7 +68,7 @@ namespace StaticK9.F.MainUI
             app.UseStaticFiles();
 
             app.UseRouting();
-            app.UseAuthorization();
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
@@ -74,6 +76,7 @@ namespace StaticK9.F.MainUI
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
+                endpoints.MapRazorPages();
             });
         }
     }

@@ -1,4 +1,5 @@
-﻿@{
+﻿@model StaticK9.F.Models.LoginModel
+@{
     Layout = "~/Views/Shared/_Layout.cshtml";
     ViewData["Title"] = "LogIn";
 }
@@ -15,26 +16,32 @@
 </div>
 <!-- Page info end -->
 
-    <section class="contact-section">
-        <div class="container">
-            <div class="row justify-content-md-center">
-                <div class="col-lg-5 contact-info">
-                    <form class="contact-form">
-                        <label for="inputEmail3" class="col-sm-2 col-form-label">Email/UserName</label>
-                        <input type="text" placeholder="">
-                        <label for="inputEmail3" class="col-sm-2 col-form-label">Passwords</label>
-                        <input type="password" placeholder="">
-                        <button class="site-btn" type="submit">Log In</button>
-                        <button asp-controller="Account" asp-action="Register" class="site-btn" type="submit">Register</button>
-                    </form>
-                    <div class="contact-social">
-                        <a href="#"><i class="fa fa-pinterest"></i></a>
-                        <a href="#"><i class="fa fa-facebook"></i></a>
-                        <a href="#"><i class="fa fa-twitter"></i></a>
-                        <a href="#"><i class="fa fa-dribbble"></i></a>
-                        <a href="#"><i class="fa fa-behance"></i></a>
+<section class="contact-section">
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="col-lg-5 contact-info">
+                <form class="contact-form">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Email/UserName</label>
+                    <input type="text" placeholder="">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Passwords</label>
+                    <input type="password" placeholder="">
+                    <button class="site-btn" type="submit">Log In</button>
+                    <button asp-controller="Account" asp-action="Register" class="site-btn" type="submit">Register</button>
+                    <div class="form-group login-remember">
+                        <label asp-for="RememberLogin">
+                            <input asp-for="RememberLogin">
+                            <strong>Remember Me</strong>
+                        </label>
                     </div>
+                </form>
+                <div class="contact-social">
+                    <a href="#"><i class="fa fa-pinterest"></i></a>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-dribbble"></i></a>
+                    <a href="#"><i class="fa fa-behance"></i></a>
                 </div>
             </div>
         </div>
-  </section>
+    </div>
+</section>

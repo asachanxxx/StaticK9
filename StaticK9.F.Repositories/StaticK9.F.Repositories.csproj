@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\StaticK9.F.Models\StaticK9.F.Models.csproj" />
+    <ProjectReference Include="..\StaticK9.F.Security\StaticK9.F.Security.csproj" />
+  </ItemGroup>
+
+</Project>
